@@ -1,13 +1,23 @@
 import Header from '@/components/Header'
+import Register from '@/components/Register'
 import SidebarAdmin from '@/components/SidebarAdmin'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <>
         <Header/>
-        <SidebarAdmin/>
-    </div>
+        <div className="flex">
+            <SidebarAdmin/>
+            <div className="mx-auto">
+                <Register/>
+
+            </div>
+           
+
+        </div>
+        
+    </>
   )
 }
 

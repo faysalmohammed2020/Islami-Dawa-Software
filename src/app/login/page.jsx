@@ -43,7 +43,7 @@ export default function LoginForm() {
             router.push("/dashboard");
             break;
           case "guest":
-            router.push("/guest-dashboard");
+            router.push("/dashboard");
             break;
           default:
             setErrorMessage("Unknown role. Please contact support.");
@@ -53,7 +53,7 @@ export default function LoginForm() {
         setErrorMessage(error.message || "Invalid email, password, or role.");
       }
     } catch (error) {
-      console.error("Login error:", error);
+      alert("Login error:", error);
       setErrorMessage("An error occurred. Please try again later.");
     } finally {
       setLoading(false);

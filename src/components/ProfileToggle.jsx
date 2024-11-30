@@ -39,7 +39,10 @@ const ProfileToggol = () => {
             {user ? user.fullName : "Guest"}
           </p>
           <p className="text-[6px] font-semibold sm:text-xs md:text-sm text-gray-900">
-            {user ? `ID: ${user.id}` : "Loading"}
+            {user ? `ID : 100${user.id}` : "Loading"}
+          </p>
+          <p className="text-[6px] font-semibold sm:text-xs md:text-sm text-gray-900">
+            {user ? `Role: ${user.role}` : "Loading"}
           </p>
         </div>
 

@@ -80,11 +80,11 @@ const SidebarAdmin = () => {
           </a>
 
           <a
-            href="moktob"
+            href="/admin/users"
             className={`flex py-2 px-2 items-center font-medium ${
               isCollapsed ? "gap-0" : "gap-3"
             } whitespace-nowrap ${
-              isActive("/moktob")
+              isActive("/admin/users")
                 ? "bg-cyan-600 rounded-md w-full text-white"
                 : "hover:text-white text-white/80"
             }`}
